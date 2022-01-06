@@ -1,0 +1,16 @@
+input {
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  border: 2px solid black;
+}
+h1 {
+  text-align: center;
+}
+.outputArea {
+  margin-top: 2rem;
+  text-align: center;
+}
+.emojiOutput {
+  text-align: center;
+}
