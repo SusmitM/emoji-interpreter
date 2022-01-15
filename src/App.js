@@ -37,17 +37,20 @@ export default function App() {
       />
       <h3>Meaning of the emoji will be displayed here 👇</h3>
       <div className="output"> {inputText} </div>
-      <h3> You can also click on the emoji's mentioned below to know their meaning</h3>
+      <h3>
+        {" "}
+        You can also click on the emoji's mentioned below to know their meaning
+      </h3>
       {emojiweknow.map(function (emoji) {
         return (
-          <div
+          <span
             className="emojiOutput"
             onClick={() => emojiclickHandler(emoji)}
             style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
           >
             {" "}
-            {emoji}
-          </div>
+            {emoji}{" "}
+          </span>
         );
       })}
     </div>
