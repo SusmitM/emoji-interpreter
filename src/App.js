@@ -23,6 +23,10 @@ export default function App() {
     var input = event.target.value;
     var inputText = emojiDictionary[input];
     setinputText(inputText);
+    if (inputText === undefined) {
+      inputText = "Sorry this emoji is not in our database.";
+      setinputText(inputText);
+    }
   }
   function emojiclickHandler(emoji) {
     var inputText = emojiDictionary[emoji];
